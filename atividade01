@@ -1,0 +1,188 @@
+
+#Exercicio 01
+
+num1 = int(input("Digite o primeiro numero: "))
+num2 = int(input("Digite o segundo numero: "))
+print(num1+num2)
+
+# Exercicio 02
+
+c = float(input("Digite a temperatura em Celsius para conversão: "))
+f = float(c*9/5+32)
+print(f"{f}°F")
+
+# Exercicio 03
+
+b = float(input("Digite a medida da Base do retangulo: "))
+h = float(input("Digite a medida da altura do retangulo "))
+r = b * h
+print(f"{r}")
+
+# Exercicio 04
+
+num = int(input("Digite um numero: "))
+tipo = "Par" if num % 2 == 0 else "Ímpar"
+print(tipo)
+
+
+# Exercicio 05
+
+
+salario = float(1250.00)
+print(salario*1.18)
+
+# Exercicio 06
+
+km = float(input("digite quantos foram km percorridos: "))
+dias = int(input("Digite quantos dias de aluguel do carro: "))
+custo_km = km * 0.18
+custo_dias =int(dias * 50)
+custo_total = custo_km + custo_dias
+
+print(f"O preço total do aluguel é : R$ {custo_total}")
+
+# Exercicio 07
+idade = int(input("Digite umaa idade: "))
+resultado = "Maior" if idade >= 18 else "menor"
+print(f"{resultado} de idade")
+
+
+# Exercício 08) 
+
+nota = float(input("Digite sua nota: "))
+
+if nota >= 90:
+    print('A')
+elif nota >= 80:
+    print('B')
+elif nota >= 70:
+    print('C')
+elif nota >= 60:
+    print('D')
+elif nota >=50:
+    print('E')
+else:
+    print('F')
+
+# Exercício 09)
+
+numero = int(input("Digite um numero: "))
+if numero > 0:
+    print("positivo")
+elif numero < 0:
+    print("negativo")
+else:
+    print("zero")
+
+    
+ #    Exercício 10) 
+num1 = int(input("insira o primeiro numero: "))
+num2 = int(input("insira o segundo numero: "))
+operador = str(input("Escolha um dos operadores +, -, x ou ÷: "))
+
+if operador == "+":
+    print( num1 + num2)
+elif operador == "-":
+    print(num1 - num2)
+elif operador == "x" :
+    print(num1 * num2)
+elif operador == "÷":
+    if num2 == 0 or num1 == 0:
+        print("Não é possível dividir número por zero")
+    else:
+        print(num1/num2)
+
+#    Exercício 11) 
+    
+idade = int(input("Insira sua idade: "))
+ 
+if idade < 16:
+     print("Voce é menor não pode votar nem dirigir")
+elif idade >= 16 and idade < 18:
+    print(" Voce pode votar mas não pode dirigir")
+elif idade >= 18:
+    print("Voce pode votar e dirigir")
+
+
+     #    Exercício 12)
+
+login = input("Digite o login: ")
+senha = input("Digite a senha: ")
+    
+if login == "admin" and senha == "1234":
+    print("Acesso permitido")
+else:
+    print("Acesso negado")
+
+
+#    Exercício 13)
+
+nota = float(input("Digite a nota do aluno: "))
+
+if nota >= 7:
+    print("Aprovado")
+elif nota < 7 and nota >=5:
+    print("Recuperação")
+else:
+    print("Reprovado")    
+
+#    Exercício 14)
+
+num = int(input("Digite um número: "))
+
+if num <= 10 and num >= 20:
+    print("O numero está dentro do intervalo permitido")
+else:
+    print("O número não esta no intervalo")
+    
+     
+#    Exercício 15)      
+       
+idade = int(input("Digite sua idade: "))
+renda = float(input("Digite sua renda mensal: "))
+    
+if idade > 18 or renda > 3000:
+     print("Poderá se cadastrar")
+else:
+    print("Cadastro não Permitido")
+ 
+
+
+#    Exercício 16) 
+
+chuva = input("se Está Chovendo escreva 'sim', caso não esteja escreva 'não': ")
+raios = input("caso haja previsão de raios escreva 'sim, caso contrario 'não': ")
+
+if chuva == "sim" and raios == "sim":
+    print("Fique em casa")
+if chuva == "sim" or raios == "sim":
+    print("Cuidado ao sair")
+else:
+    print("Pode sair com segurança")
+
+
+
+
+  #    Exercício 17) 
+
+n1 = int(input("Digite o primeiro número: "))
+n2 = int(input("Digite o segundo número: "))
+n3 = int(input("Digite o terceiro número: "))
+
+
+maior = n1
+if n2 > maior:
+    maior = n2
+if n3 > maior:
+    maior = n3
+
+
+menor = n1
+if n2 < menor:
+    menor = n2
+if n3 < menor:
+    menor = n3
+
+
+print(f"O maior número é: {maior}")
+print(f"O menor número é: {menor}")
