@@ -1,0 +1,63 @@
+# exercicio 1
+x = range(35, 71)
+
+for n in x:
+    print(n)
+
+# exercicio 2
+x = range(70, 49, -1)
+
+for n in x:
+    print(n)
+
+# exercicio 3
+n = int(input("Digite um número: "))
+
+for i in range(1, n+1):
+    if i % 2 == 0:
+        print(i)
+
+# exercicio 4
+
+for i in range(1, 11):
+    print(f"1 x {i} = {i}")
+
+
+# exercicio 5
+fruta = ["maçã", "banana", "abacate", "uva"]
+cor = ['vermelha', 'amarela', 'verde', 'roxa']
+
+for i in range(len(fruta)):
+    print(f"A {fruta[i]} é {cor[i]}")
+
+# exercicio 6
+
+
+for i in range(1, 51):
+    if (i % 3 ==0) and (i % 5 ==0):
+        print(("FizzBuzz"))
+    elif i % 3 == 0:
+        print("Fizz")
+    elif i % 5 ==0:
+        print("Buzz")
+
+    else:
+        print(i)
+
+
+# exercicio 7
+
+print("produtos disponíveis:\nmouse, monitor, gabinete, teclado, notebook")
+item= input("Digite o nome do produto desejado para conferir o preço: ")
+
+produtos= {
+    "mouse": 10.00,
+    "monitor": 399.00,
+    "gabinete": 150.00,
+    "teclado": 100.00,
+    "notebook": 3500.00
+    }
+if item in produtos:
+    print(f"{item} custa: R$ {produtos[item]}")
+else:
+    print("Produto não encontrado")
