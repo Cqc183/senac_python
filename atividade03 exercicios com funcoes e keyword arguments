@@ -1,0 +1,22 @@
+#1 Apresentando Membros da Família: crie uma função `family_members(**kwargs)` que recebe nomes de membros da família como argumentos nomeados e imprime suas relações.
+def family_members(**kwargs):
+    for relation, name in kwargs.items():
+        print(f"{relation.capitalize()}: {name}")
+
+family_members(father="Carlos", mother="Ana", brother="Lucas", sister="Mariana")
+
+
+#2 Pedido de Restaurante: crie uma função `order_food(**kwargs)` que recebe itens de um pedido de restaurante como argumentos nomeados e imprime os pratos e suas quantidades.
+def order_food(**kwargs):
+    for dish, quantity in kwargs.items():
+        print(f"{dish.capitalize()}: {quantity}")
+
+order_food(pizza=2, burger=3, pasta=1, salad=4)
+
+#3 Criando um Perfil de Usuário: crie uma função `create_profile(**kwargs)` que recebe informações de um usuário (nome, idade, cidade, profissão, etc.) e retorna um dicionário
+
+def create_profile(**kwargs):
+    return kwargs
+
+profile = create_profile(name="Christian", age=41, city="Rio de Janeiro", profession="Programador")
+print(profile)
