@@ -1,0 +1,28 @@
+#1
+def sum_all(*args):
+    return sum(args)
+
+print(sum_all(1, 2, 3))
+print(sum_all(10, 20, 30, 40))
+print(sum_all(5))
+
+#2
+def multiply_all(*args):
+    result = 1
+    for num in args:
+        result *= num
+    return result
+
+print(multiply_all(1, 2, 3))
+print(multiply_all(10, 2, 3, 4))
+print(multiply_all(5))
+
+#3
+def config_settings(config=None, **kwargs):
+    if config is None:
+        config = {}
+    config.update(kwargs)
+    return config
+
+defaults = {"theme": "light", "language": "en"}
+print(config_settings(defaults, theme="dark", language="pt", font="Arial"))
