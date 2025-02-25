@@ -1,0 +1,136 @@
+
+#1-Soma de Dois Números: crie uma função `sum_numbers(a, b)` que recebe dois números e retorna a soma deles.
+
+def sum_numbers(a,b):
+    return (a+b)
+print(sum_numbers(1,3))
+
+#2 - Número Par ou Ímpar: crie uma função `is_even(n)` que recebe um número inteiro e retorna
+ `True` se for par e `False` se for ímpar.
+
+
+
+def is_even(n):
+    return ("par" if n % 2 == 0 else "impar")
+print(is_even(7))
+
+#3 -Fatorial de um Número: crie uma função `factorial(n)` que recebe um número inteiro positivo
+# e retorna seu fatorial.
+
+
+
+n = int(input("Digite um numero inteiro: "))
+
+def factorial(n):
+
+    r = 1
+    while(n>=1):
+
+        r = r * n
+        n = n-1
+    return (r)
+print(factorial(n))
+
+
+#4 - Contar Vogais em uma Palavra: crie uma função `count_vowels(word)` que recebe uma string e retorna a
+#quantidade de vogais nela.
+
+
+word= input("Digite uma palavra para contar as vogais: ")
+
+def count_vowels(word):
+    a = word.count("a")
+    e = word.count("e")
+    i = word.count("i")
+    o = word.count("o")
+    u = word.count("u")
+
+    c = a + e + i + o + u
+
+    return c
+
+total_vogais = count_vowels(word)
+
+print(f"O total de vogais de {word} é {total_vogais}")
+
+
+#5 - Inverter uma String: crie uma função `reverse_string(text)` que recebe uma string e retorna seu inverso.
+
+
+
+
+text = input("Digite uma palavra par inverter: ")
+
+def reverse_string(text):
+    r =text[::-1]
+
+
+    return r
+reverse = reverse_string(text)
+
+print(f"a palavra {text} reversa é {reverse} ")
+
+#6 - Números Primos: crie uma função `is_prime(n)` que recebe um número inteiro maior que 1 e retorna
+# `True` se for primo e `False` caso contrário.
+
+
+
+def is_prime(n):
+
+    if n <= 1:
+        return False
+
+    if n == 2:
+        return True
+
+    if n % 2 == 0:
+        return False
+
+    for i in range(3, n, 2):
+        if n % i == 0:
+            return False
+    return True
+
+
+print(is_prime(2))
+print(is_prime(3))
+print(is_prime(4))
+print(is_prime(29))
+print(is_prime(30))
+
+
+#7
+
+def average(numbers):
+    return sum(numbers) / len(numbers)
+
+
+
+
+#8
+
+print(average([1, 2, 3, 4, 5]))
+print(average([10, 20, 30]))
+
+def celsius_to_fahrenheit(c):
+    return (c * 9/5) + 32
+
+print(celsius_to_fahrenheit(0))   # 32.0
+print(celsius_to_fahrenheit(100)) # 212.0
+
+
+#9
+
+def word_count(sentence):
+    return len(sentence.split())
+
+print(word_count("Olá, como você está?"))
+print(word_count("Python é uma linguagem poderosa"))
+
+
+#10
+def max_of_three(a, b, c):
+    return max(a, b, c)
+
+print(max_of_three(3, 7, 5))
+print(max_of_three(10, 2, 8))
